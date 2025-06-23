@@ -1,0 +1,125 @@
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white url('../images/background_weather.png.png') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 255, 0.1);
+    }
+
+    .header-content {
+  flex: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6); /* blanc semi-transparent */
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+    h1 {
+      font-size: 3em;
+      color: blue;
+      margin: 0;
+      background: none;
+      align-content: center;
+    }
+
+    .right-panel {
+      text-align: right;
+    }
+
+    .clock {
+      font-size: 2em;
+      color: #FFD700; /* jaune */
+    }
+
+    .description {
+      margin: 10px 0;
+      color: black;
+    }
+
+    .top-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      gap: 10px;
+    }
+
+    select, input[type="search"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid blue;
+      border-radius: 5px;
+    }
+
+    .forecast {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      width: 160px;
+      height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      color: black;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+    }
+
+    .footer {
+  margin-top: 30px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 128, 0.7); /* bleu semi-transparent */
+  border-top: 1px solid #ccc;
+}
+
+.suggestions-box {
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+  width: 250px;
+  display: none;
+}
+
+.suggestions-box div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions-box div:hover {
+  background-color: #f0f0f0;
+}

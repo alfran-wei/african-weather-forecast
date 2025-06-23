@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="./css/master.css">
+  
+</head>
+<body>
+  <!-- Here we have main title and descrciption of web site , also we display dynamique time (format 24h) initially 00:00 -->
+  <header>
+    <div class="header-content">
+      <h1>Weather' Africa</h1>
+      <p class="description">African weather forcaste <br><small>Powered by 7Timer!</small></p>
+    </div>
+    <div class="right-panel">
+      <div class="clock" id="timeDisplay">00:00</div>
+    </div>
+  </header>
+
+  <!-- Then we have a place for search a city , with autocompletion and a list of suggestion (it will come with js)-->  
+  <div class="top-controls">
+    <input type="search" id="searchInput" placeholder="Rechercher une ville..." autocomplete="off"/>
+    <div id="suggestions" class="suggestions-box"></div>
+    <select id="citySelector"></select>
+    <button id="geoButton">📍 Météo de ma position</button>
+  </div>
+
+  <!-- Place for display prevision weather (more detail in file main.js)-->
+  <div class="forecast" id="forecastContainer"></div>
+
+  
+  <footer class="footer">&copy; AlfranCompany 2025</footer>
+  <!-- we import library js papaparse for read content of .CSV file-->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
