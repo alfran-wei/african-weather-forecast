@@ -69,9 +69,7 @@ This modular architecture makes it easy to maintain, scale, and reuse in other c
 
 
 🌐 Live Demo
-Coming soon…
-(You can host it via GitHub Pages and add the link here)
-Example: https://yourusername.github.io/weather-africa-app
+https://african-weather-forecast.netlify.app/
 ---
 
 
