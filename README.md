@@ -1,6 +1,6 @@
 # 🌍 Weather' Africa
 
-![App Screenshot](./images/screenshot.jpg)
+![App Screenshot](./images/screenshot.png)
 
 An interactive web application that displays 7-day weather forecasts for African cities. Built with HTML, CSS, and JavaScript, it uses the 7Timer! API and includes CSV-based city selection, autocomplete, timezone-based clocks, and geolocation support.
 
